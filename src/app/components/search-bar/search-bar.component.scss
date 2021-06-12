@@ -6,15 +6,18 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 4;
   }
+
   &-form {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
+
   &-input {
     margin-left: 10px;
     padding: 10px;
@@ -24,6 +27,7 @@
     outline: none;
     border: none;
   }
+
   &-button {
     border: none;
     outline: none;
@@ -34,8 +38,9 @@
     border-bottom-right-radius: 5px;
     color: #fff;
     font-weight: 700;
-    transition-duration: 0.3;
+    transition-duration: 0.3s;
     cursor: pointer;
+
     &:hover {
       color: #3f51b5;
       background-color: #fff;
@@ -43,6 +48,7 @@
     }
   }
 }
+
 .logo {
   margin-left: 10px;
   color: #fff;
