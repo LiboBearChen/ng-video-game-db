@@ -30,7 +30,7 @@ export class DetailsComponent implements OnInit {
 
   getGameDetails(id: string): void {
     this.gameSub = this.httpService
-      .getGameList(id)
+      .getGameDetails(id)
       .subscribe((gameResp: Game) => {
         this.game = gameResp;
         setTimeout(() => {
@@ -41,7 +41,7 @@ export class DetailsComponent implements OnInit {
 
   getColor(value: number): string {
     if (value > 75) {
-      return '5ee432';
+      return '#5ee432';
     } else if (value > 50) {
       return '#fffa50';
     } else if (value > 30) {
