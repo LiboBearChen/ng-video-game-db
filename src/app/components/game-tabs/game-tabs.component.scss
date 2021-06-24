@@ -1,6 +1,6 @@
 .game {
   &-tabs {
-    background: rgb(63, 81, 181/61%);
+    background: rgb(63 81 181/61%);
     color: #fff;
     text-align: left;
     padding: 10px;
@@ -46,5 +46,19 @@
 
   &-description {
     padding: 20px;
+  }
+
+  &-screenshot {
+    margin-top: 5px;
+    width: calc(50%-10px);
+
+    &:nth-child(even) {
+      margin-left: 10px;
+    }
+  }
+
+  &-trailer {
+    width: 100%;
+    margin: 20px 0;
   }
 }
